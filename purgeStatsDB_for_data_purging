@@ -1,0 +1,12 @@
+create database purgeStatsDB;
+
+
+CREATE TABLE dataPurgeStats (
+id BIGINT(18) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+tableName varchar(30) not null,
+minID BIGINT(18) UNSIGNED not null,
+maxID BIGINT(18) UNSIGNED not null,
+deleteStarttime TIMESTAMP,
+deleteEndtime TIMESTAMP,
+deletedRowsCount BIGINT(18) UNSIGNED
+)
